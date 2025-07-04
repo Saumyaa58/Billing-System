@@ -18,4 +18,4 @@ This is a Billing System application developed in **C** using the **GTK** graphi
 ## Installation and Compilation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/billing-system.git
+   git clone https://github.com/saumyaa58/billing-system.git
