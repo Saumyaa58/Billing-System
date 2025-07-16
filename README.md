@@ -1,5 +1,5 @@
 # Billing-System
-using C and GTK
+using C and Qt
 ## Project Description
 This is a Billing System application developed in **C** using the **GTK** graphical user interface toolkit. The system helps manage customer billing operations efficiently with a user-friendly interface. It supports adding products, generating bills, saving bills for record-keeping, and inventory alerts to notify when stock is low.
 
