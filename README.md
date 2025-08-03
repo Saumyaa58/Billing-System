@@ -1,19 +1,20 @@
-# Billing-System
-using C/C++ and Qt
+# Grocify - Billing System
+A desktop-based billing system built using C/C++ and Qt Framework
 ## Project Description
-This is a Billing System application developed in **C & C++** using the **Qt** graphical user interface toolkit. The system helps manage customer billing operations efficiently with a user-friendly interface. It supports adding products, generating bills, saving bills for record-keeping, and inventory alerts to notify when stock is low.
-
+Grocify is a simple and efficient billing system application developed using C/C++ and the Qt GUI framework. It is designed for small-scale retail businesses to manage inventory and generate customer bills easily through a clean, user-friendly interface. The system allows shopkeepers to perform day-to-day billing operations smoothly, reducing manual effort and errors.
 ## Features
 - Add new products with price and quantity
-- Generate and save customer bills
-- Inventory alert when stock is running low
-- Update and delete product information
-- Intuitive GTK-based graphical interface
+-Update and delete existing product details
+-Generate and print customer bills
+-Cancel the bill before confirmation
+-User authentication system (login)
+-Inventory alert when stock is low
+-Simple and intuitive Qt-based interface
 
 ## Technologies Used
 - Programming Language: C & C++
-- GUI Toolkit: Qt
-- Compiler: GCC
+- GUI Framework: Qt
+- Compiler: GCC(MinGW)
 
 ## Installation and Compilation
 1. Clone the repository:
