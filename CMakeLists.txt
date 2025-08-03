@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 cmake_minimum_required(VERSION 3.16)
 
 project(GrocifyBilling VERSION 0.1 LANGUAGES CXX)
@@ -71,3 +72,19 @@ install(TARGETS GrocifyBilling
 if(QT_VERSION_MAJOR EQUAL 6)
     qt_finalize_executable(GrocifyBilling)
 endif()
+=======
+cmake_minimum_required(VERSION 3.16)
+
+project(grocifyy LANGUAGES C)
+
+add_executable(grocifyy
+    product.h
+    product.c
+    main.c)
+
+include(GNUInstallDirs)
+install(TARGETS grocifyy
+    LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
+    RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
+)
+>>>>>>> 23305dc4233ace3d916c8777784d8579b52c72f8
