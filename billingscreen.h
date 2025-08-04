@@ -1,5 +1,5 @@
-#ifndef MAINWINDOW_H
-#define MAINWINDOW_H
+#ifndef BILLINGSCREEN_H
+#define BILLINGSCREEN_H
 
 #include <QMainWindow>
 #include <QTableWidgetItem>
@@ -28,4 +28,4 @@ private:
     void updateTotals();
 };
 
-#endif // MAINWINDOW_H
+#endif // BILLINGSCREEN_H

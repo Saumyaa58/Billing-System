@@ -3,15 +3,15 @@ QT += core gui widgets
 CONFIG += c++17
 
 SOURCES += \
+    billingscreen.cpp \
     main.cpp \
-    mainwindow.cpp \
     receiptscreen.cpp
 
 HEADERS += \
-    mainwindow.h \
+    billingscreen.h \
     receiptscreen.h
 
 FORMS += \
-    mainwindow.ui \
+    billingscreen.ui \
     receiptscreen.ui
 

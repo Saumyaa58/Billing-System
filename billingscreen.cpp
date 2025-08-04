@@ -1,5 +1,5 @@
-#include "mainwindow.h"
-#include "ui_mainwindow.h"
+#include "billingscreen.h"
+#include "ui_billingscreen.h"
 #include <QMessageBox>
 #include <QDateTime>
 #include <QDoubleValidator>
