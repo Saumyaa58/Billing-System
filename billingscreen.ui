@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>MainWindow</class>
- <widget class="QMainWindow" name="MainWindow">
+ <class>BillingScreen</class>
+ <widget class="QMainWindow" name="BillingScreen">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -191,7 +191,7 @@ Smart Grocery Billing</string>
      <rect>
       <x>460</x>
       <y>500</y>
-      <width>81</width>
+      <width>101</width>
       <height>24</height>
      </rect>
     </property>
@@ -311,7 +311,7 @@ Smart Grocery Billing</string>
      <x>0</x>
      <y>0</y>
      <width>800</width>
-     <height>22</height>
+     <height>24</height>
     </rect>
    </property>
   </widget>

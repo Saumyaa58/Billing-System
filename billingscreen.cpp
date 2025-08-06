@@ -4,9 +4,9 @@
 #include <QDateTime>
 #include <QDoubleValidator>
 
-MainWindow::MainWindow(QWidget *parent)
+    BillingScreen::BillingScreen(QWidget *parent)
     : QMainWindow(parent)
-    , ui(new Ui::MainWindow)
+    , ui(new Ui::BillingScreen)
     , receiptScreen(nullptr)
 {
     ui->setupUi(this);
@@ -38,12 +38,12 @@ MainWindow::MainWindow(QWidget *parent)
     ui->lineEditProduct->setFocus();
 }
 
-MainWindow::~MainWindow()
+BillingScreen::~BillingScreen()
 {
     delete ui;
 }
 
-void MainWindow::on_btnAddToBill_clicked()
+void BillingScreen::on_btnAddToBill_clicked()
 {
     QLineEdit* productInput = findChild<QLineEdit*>("lineEditProduct");
     QSpinBox* quantityInput = findChild<QSpinBox*>("spinBoxQuantity");
@@ -105,7 +105,7 @@ void MainWindow::on_btnAddToBill_clicked()
     updateTotals();
 }
 
-void MainWindow::updateTotals()
+void BillingScreen::updateTotals()
 {
     QTableWidget* billTable = findChild<QTableWidget*>("tableBill");
     QLabel* subtotalLabel = findChild<QLabel*>("labelSubtotalValue");
@@ -139,7 +139,7 @@ void MainWindow::updateTotals()
     totalLabel->setText(QString::number(grandTotal, 'f', 2));
 }
 
-void MainWindow::on_btnGenerateBill_clicked()
+void BillingScreen::on_btnGenerateBill_clicked()
 {
     if (ui->tableBill->rowCount() == 0) {
         QMessageBox::warning(this, "Empty Bill", "No items in the bill");
@@ -170,7 +170,7 @@ void MainWindow::on_btnGenerateBill_clicked()
     receiptScreen->show();
 }
 
-void MainWindow::on_btnClearBill_clicked()
+void BillingScreen::on_btnClearBill_clicked()
 {
     QTableWidget* billTable = findChild<QTableWidget*>("tableBill");
     QLabel* subtotalLabel = findChild<QLabel*>("labelSubtotalValue");

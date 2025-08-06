@@ -6,16 +6,16 @@
 #include "receiptscreen.h"
 
 QT_BEGIN_NAMESPACE
-namespace Ui { class MainWindow; }
+namespace Ui { class BillingScreen; }
 QT_END_NAMESPACE
 
-class MainWindow : public QMainWindow
+class BillingScreen : public QMainWindow
 {
     Q_OBJECT
 
 public:
-    MainWindow(QWidget *parent = nullptr);
-    ~MainWindow();
+    explicit BillingScreen(QWidget *parent = nullptr);
+    ~BillingScreen();
 
 private slots:
     void on_btnAddToBill_clicked();
@@ -23,7 +23,7 @@ private slots:
     void on_btnClearBill_clicked();
 
 private:
-    Ui::MainWindow *ui;
+    Ui::BillingScreen *ui;
     ReceiptScreen *receiptScreen;
     void updateTotals();
 };
